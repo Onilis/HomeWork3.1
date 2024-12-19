@@ -46,9 +46,6 @@ class homeWork3 {
         System.out.println("В школе, где " + totalClasses + " классов, нужно " + whitePaintTotal + " банок белой краски и " + brownPaintTotal + " банок коричневой краски");
 
 
-
-
-
         int bananas = 5;
         int milkMl = 200;
         int iceCream = 2;
@@ -70,7 +67,6 @@ class homeWork3 {
         System.out.println();
 
 
-
         double needToReset = 7;
         double weightLoss = 0.250;
         double weightLoss1 = 0.500;
@@ -79,7 +75,6 @@ class homeWork3 {
         System.out.println("Если терять в весе 250 грамм в день, то можно похудеть за " + weight + " дней. ");
         System.out.println("Если терять в весе 500 грамм в день, то можно похудеть за " + weight1 + " дней. ");
         System.out.println();
-
 
 
         float salaryMasha = 67760f;
