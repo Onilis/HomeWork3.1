@@ -1,40 +1,67 @@
 class homeWork3 {
     public static void main(String[] args) {
-        int a1 = 38500940;
-        byte a2 = 120;
-        short a3 = 31199;
-        long a4 = 6_555_486_785_556L;
-        float a5 = 4.28F;
-        double a6 = 4.28282585009;
-
-        int b1 = 569;
-        byte b2 = 67;
-        short b3 = 27897;
-        long b4 = 987678965549L;
-        float b5 = 27.12F;
-        double b6 = 2.786;
-        int b7 = -159;
-
-        int studentLyudmilaPavlovna = 23;
-        int studentAnnaSergeevna = 27;
-        int studentEkaterinaAndreevna = 30;
-        int purchasedSecurities = 480;
-        int perStudent = purchasedSecurities / (23 + 27 + 30);
-        System.out.println("На каждого ученика рассчитано " + perStudent + " листов бумаги");
+        byte myByte = 127;
+        short myShort = 32167;
+        int myInt = 140700;
+        long myLong = 6500486785556L;
+        float myFloat = 4.28F;
+        double myDouble = 4.28282585009;
+        System.out.println("Значение переменной myByte: " + myByte);
+        System.out.println("Значение переменной myShort: " + myShort);
+        System.out.println("Значение переменной myInt: " + myInt);
+        System.out.println("Значение переменной myLong: " + myLong);
+        System.out.println("Значение переменной myFloat: " + myFloat);
+        System.out.println("Значение переменной myDouble: " + myDouble);
         System.out.println();
 
-        int machinePerformance2min = 16;
-        int min1 = machinePerformance2min / 2;
-        int min20 = min1 * 20;
-        int day = min1 * (60 * 24);
-        int day3 = day * 3;
-        int month = day * 30;
 
-        System.out.println("За 1 минуту машина произвела " + min1 + " штук бутылок");
-        System.out.println("За 20 минут машина произвела " + min20 + " штук бутылок");
-        System.out.println("За 1 день машина произвела " + day + " штук бутылок");
-        System.out.println("За 3 дня машина произвела " + day3 + " штук бутылок");
-        System.out.println("За 1 месяц машина произвела " + month + " штук бутылок");
+        float byFloat = 27.12F;
+        long byLong = 987678965549L;
+        double byDoble = 2.786;
+        int byInt = 569;
+        int byInt1 = 27897;
+        short byShort = -159;
+        byte byByte = 67;
+
+
+        int studentsLudmila = 23;
+        int studentsAnna = 27;
+        int studentsEkaterina = 30;
+
+        int totalStudents = studentsLudmila + studentsAnna + studentsEkaterina;
+        int totalNotebooks = 480;
+
+        int notebooksPerStudent = totalNotebooks / totalStudents;
+
+        int notebooksLudmila = studentsLudmila * notebooksPerStudent;
+        int notebooksAnna = studentsAnna * notebooksPerStudent;
+        int notebooksEkaterina = studentsEkaterina * notebooksPerStudent;
+
+        System.out.println("Тетради для Людмилы Павловны: " + notebooksLudmila);
+        System.out.println("Тетради для Анны Сергеевны: " + notebooksAnna);
+        System.out.println("Тетради для Екатерины Андреевны: " + notebooksEkaterina);
+        System.out.println();
+
+
+        int bottlesPer2Minutes = 16;
+        int minutesInHour = 60;
+        int hoursInDay = 8;
+        int daysInMonth = 30;
+
+        double bottlesPerMinute = (double) bottlesPer2Minutes / 2;
+
+        int bottlesIn30Minutes = (int) (bottlesPerMinute * 20);
+        System.out.println("Количество бутылок за 20 минут: " + bottlesIn30Minutes);
+
+        int bottlesIn1Day = (int) (bottlesPerMinute * hoursInDay * minutesInHour);
+        System.out.println("Количество бутылок за 1 день: " + bottlesIn1Day);
+
+        int bottlesIn3Days = bottlesIn1Day * 3;
+        System.out.println("Количество бутылок за 3 дня: " + bottlesIn3Days);
+
+        int totalMinutesInMonth = hoursInDay * minutesInHour * daysInMonth;
+        int bottlesInMonth = (int) (bottlesPerMinute * totalMinutesInMonth);
+        System.out.println("Количество бутылок за 1 месяц: " + bottlesInMonth);
         System.out.println();
 
         int totalPaints = 120;
@@ -44,6 +71,7 @@ class homeWork3 {
         int whitePaintTotal = totalClasses * whitePaintClass;
         int brownPaintTotal = totalClasses * brownPaintClass;
         System.out.println("В школе, где " + totalClasses + " классов, нужно " + whitePaintTotal + " банок белой краски и " + brownPaintTotal + " банок коричневой краски");
+        System.out.println();
 
 
         int bananas = 5;
@@ -62,8 +90,8 @@ class homeWork3 {
         int totalRawEggs = rawEggs * rawEggs1;
         int blenderGramm = totalBananas + totalMilk + totalIceCreamBriquettes + totalRawEggs;
         float blender = blenderGramm / 1000F;
-        System.out.println(totalBananas + totalMilk + totalIceCreamBriquettes + totalRawEggs + " грамм в блендере.");
-        System.out.println(blender + " килограмм в блендере.");
+        System.out.println(" Всего  " + blenderGramm + " грамм в блендере.");
+        System.out.println(" Всего  " + blender + " килограмм в блендере.");
         System.out.println();
 
 
@@ -77,19 +105,25 @@ class homeWork3 {
         System.out.println();
 
 
-        float salaryMasha = 67760f;
-        float salaryDenis = 83690f;
-        float salaryKristina = 76230f;
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
         float salaryIncrease = 0.10f;
-        float newSalaryMasha = salaryMasha * salaryIncrease;
-        float newSalaryDenis = salaryDenis * salaryIncrease;
-        float newSalaryKristina = salaryKristina * salaryIncrease;
-        float increasedMasha = newSalaryMasha + salaryMasha;
-        float increasedDenis = newSalaryDenis + salaryDenis;
-        float increasedKristina = newSalaryKristina + salaryKristina;
-        System.out.println("У Маши была такая " + salaryMasha + " зарплата. Ее повысили на " + newSalaryMasha + " руб. И теперь она получает " + increasedMasha + " руб. ");
-        System.out.println("У Дениса была такая " + salaryDenis + " зарплата. Ее повысили на " + newSalaryDenis + " руб. И теперь она получает " + increasedDenis + " руб. ");
-        System.out.println("У Кристины была такая " + salaryKristina + " зарплата. Ее повысили на " + newSalaryKristina + " руб. И теперь она получает " + increasedKristina + " руб. ");
+        double newSalaryMasha = salaryMasha * salaryIncrease;
+        double newSalaryDenis = salaryDenis * salaryIncrease;
+        double newSalaryKristina = salaryKristina * salaryIncrease;
+        double increasedMasha = newSalaryMasha + salaryMasha;
+        double increasedDenis = newSalaryDenis + salaryDenis;
+        double increasedKristina = newSalaryKristina + salaryKristina;
+        int сurrentSalary = salaryMasha + salaryDenis + salaryKristina;
+        double newSalary = newSalaryMasha + newSalaryDenis + newSalaryKristina;
+        double revenueDifference = newSalaryMasha + newSalaryDenis + newSalaryKristina;
+
+
+        System.out.println(" Маша теперь получает " + increasedMasha + " руб. Годовой доход вырос на " + newSalaryMasha + " руб. ");
+        System.out.println(" Денис теперь получает " + increasedDenis + " руб. Годовой доход вырос на " + newSalaryDenis + " руб. ");
+        System.out.println(" Кристина теперь получает " + increasedKristina + " руб. Годовой доход вырос на " + newSalaryKristina + " руб. ");
+        System.out.println(" Общая годовая разница за год составила : " + revenueDifference + " руб. ");
 
     }
 }
